@@ -86,7 +86,6 @@ class Ipv4:
                     self.ttl, self.protocol, self.checksum, bytes(map(int, self.src_ip.split('.'))),
                     bytes(map(int, self.dst_ip.split('.'))))
 
-
 class ICMP:
     def __init__(self, type_=0, code=0, checksum=0):
         self.type = type_
